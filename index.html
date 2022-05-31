@@ -10,6 +10,7 @@
 
 </head>
 <body>
+  <div class="backdrop"></div>
   <main class="container">
     <!-- navbar start -->
     <nav class="navbar">
@@ -20,9 +21,20 @@
         <div class="left-nav-menu">
           <ul>
             <li id="features"><a href="#">Features <img src="./images/icon-arrow-down.svg" alt="show features"></a></li>
-            <li id="company"><a href="#">Company <img src="./images/icon-arrow-down.svg" alt="show comany menu"></a></li>
+            <li id="company"><a href="#">Company <img src="./images/icon-arrow-down.svg" alt="show company menu"></a></li>
             <li id="career"><a href="#">Careers</a></li>
             <li id="about"><a href="#">About</a></li>
+          </ul>
+          <ul id="feature-menu">
+            <li><img src="./images/icon-todo.svg" alt="todo">Todo List</li>
+            <li><img src="./images/icon-calendar.svg" alt="calander">Calendar</li>
+            <li><img src="./images/icon-reminders.svg" alt="reminder">Reminder</li>
+            <li><img src="./images/icon-planning.svg" alt="plans">Planning</li>
+          </ul>
+          <ul id="company-menu">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
           </ul>
         </div>
       </div>
@@ -32,6 +44,32 @@
           <li id="login"><a href="#">Login</a></li>
           <li id="register"><a href="#">Register</a></li>
           <li id="hamburger"><img src="./images/icon-menu.svg" alt="open menu"></li>
+        </ul>
+      </div>
+      <div class="overlay-menu">
+        <div class="close-menu"><img src="./images/icon-close-menu.svg" alt="close mobile menu"></div>
+        <ul class="top-menu">
+          <li id="small-features">Features<img src="./images/icon-arrow-down.svg" alt="show features">
+            <ul class="features-small-menu">
+              <li><img src="./images/icon-todo.svg" alt="todo">Todo List</li>
+              <li><img src="./images/icon-calendar.svg" alt="calander">Calendar</li>
+              <li><img src="./images/icon-reminders.svg" alt="reminder">Reminder</li>
+              <li><img src="./images/icon-planning.svg" alt="plans">Planning</li>
+            </ul>
+          </li>
+          <li id="small-company">Company<img src="./images/icon-arrow-down.svg" alt="show features">
+            <ul class="company-small-menu">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <ul class="bottom-menu">
+          <li>Login</li>
+          <li type="button">Register</li>
         </ul>
       </div>
     </nav>
