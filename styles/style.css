@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.container {
+  width: 1000px;
+  min-width: 1400px;
+  max-width: 800px;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.container .navbar li {
+  list-style-type: none;
+  color: dimgray;
+  cursor: pointer;
+}
+
+.container .navbar li a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: dimgray;
+}
+
+.container .navbar li a img {
+  margin-left: 3px;
+}
+
+.container .navbar .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+.container .navbar .left-nav .logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .navbar .left-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .navbar .right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .navbar .right-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .navbar .right-nav ul li#register {
+  border: 1px solid dimgray;
+  border-radius: 10px;
+  padding: 5px 12px;
+}
+
+.container .hero {
+  padding: 0 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .hero .hero-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+.container .hero .hero-description .hero-description-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70%;
+  padding-top: 5rem;
+}
+
+.container .hero .hero-description .hero-description-action h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #141414;
+}
+
+.container .hero .hero-description .hero-description-action p {
+  font-size: 0.9rem;
+  color: dimgray;
+  line-height: 1.4rem;
+}
+
+.container .hero .hero-description .hero-description-action button {
+  width: 120px;
+  text-align: center;
+  color: #fafafa;
+  background: #141414;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container .hero .hero-description .hero-description-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.container .hero .hero-description .hero-description-clients div {
+  width: 120px;
+}
+
+.container .hero .hero-image {
+  content: url("../images/image-hero-desktop.png");
+  width: 40%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.container .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  color: dimgray;
+  font-size: 0.7rem;
+}
+
+.container .attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
