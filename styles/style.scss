@@ -15,9 +15,6 @@ html {
 }
 
 .container {
-  width: 1000px;
-  min-width: 1400px;
-  max-width: 800px;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -49,8 +46,10 @@ html {
     .left-nav {
       display: flex;
       gap: 3rem;
+      align-items: center;
 
       .logo {
+        padding-top: 5px;
         align-items: center;
       }
 
@@ -73,37 +72,50 @@ html {
           border: 1px solid $mediumGrey;
           border-radius: 10px;
           padding: 5px 12px;
+        
+        
+        }
+        li#hamburger{
+          display: none;
         }
       }
     }
   }
+
   .hero {
+
     padding: 0 7rem;
     display: flex;
 
     .hero-description {
+      gap: 3rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       width: 60%;
 
       .hero-description-action {
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 70%;
+        gap: 3rem;
         padding-top: 5rem;
 
         h1 {
           font-size: 4rem;
           font-weight: 700;
           color: $almostBlack;
+          width: 70%;
         }
+
         p {
           font-size: 0.9rem;
           color: $mediumGrey;
           line-height: 1.4rem;
+          width: 70%;
         }
+
         button {
           width: 120px;
           text-align: center;
@@ -112,9 +124,12 @@ html {
           padding: 10px 10px;
           border-radius: 10px;
           cursor: pointer;
+          outline: none;
         }
       }
+
       .hero-description-clients {
+
         display: flex;
         gap: 2rem;
 
@@ -125,22 +140,149 @@ html {
     }
 
     .hero-image {
+
+
       content: url("../images/image-hero-desktop.png");
       width: 40%;
       flex-grow: 0;
     }
   }
+
   .attribution {
+
     font-size: 11px;
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 2rem;
     color: $mediumGrey;
     font-size: 0.7rem;
+    width: 100%;
   }
+
   .attribution a {
+    width: 100%;
     color: hsl(228, 45%, 44%);
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: $laptop) {
+  .container section.hero {
+    border: 1px solid blue;
+    padding: 0;
+  }
+
+  .container .hero .hero-description .hero-description-clients {
+
+
+    display: flex;
+    gap: 1rem;
+
+    div {
+      width: 100px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+
+    padding: 0 1rem;
+    gap: 1rem;
+
+    .navbar {
+      .left-nav {
+        ul {
+          display: none;
+        }
+      }
+
+      .right-nav {
+
+        ul {
+
+          li#login {
+            display: none;
+          }
+
+          li#register {
+            display: none;
+          }
+
+          li#hamburger {
+            display: block;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    section.hero {
+
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .hero-description {
+
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        order: 2;
+
+
+        .hero-description-action {
+          gap: 2rem;
+          padding-top: 3rem;
+          align-items: center;
+
+          h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: $almostBlack;
+          }
+
+          p {
+            font-size: 0.8rem;
+            color: $mediumGrey;
+            line-height: 1.3rem;
+            width: 80%;
+            text-align: center;
+          }
+        }
+
+        .hero-description-clients {
+
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            width: 70px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .hero-image {
+
+        content: url("../images/image-hero-mobile.png");
+        width: 100%;
+        order: 1;
+      }
+    }
   }
 }
